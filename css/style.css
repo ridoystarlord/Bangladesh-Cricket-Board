@@ -192,6 +192,7 @@ footer {
     width: 100%;
   }
   .players {
+    width: 100%;
     flex-direction: column;
   }
   .players-container {
@@ -205,6 +206,7 @@ footer {
     margin-right: 15px;
   }
   .title-sponsor {
+    width: 100%;
     flex-direction: column;
     margin-top: 60px;
   }
@@ -258,6 +260,6 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-/* Mobile Device END */
+/* Tablet Device END */
 
 /* Media Query END */
