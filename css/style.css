@@ -228,4 +228,36 @@ footer {
   }
 }
 /* Mobile Device END */
+/* Tablet Device Start */
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  .top-banner,
+  .title-sponsor {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .top-banner-information {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .top-banner-logo {
+    width: 100%;
+    margin-left: 0;
+  }
+  .top-banner-logo img {
+    width: 100%;
+  }
+  .players {
+    width: 100%;
+    align-items: center;
+  }
+  .players-container {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Mobile Device END */
+
 /* Media Query END */
