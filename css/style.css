@@ -1,14 +1,16 @@
 /* Google Fonts Start*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Niconne&family=Poppins&display=swap");
 
 /* Google Fonts END */
 
 /* Common Styles Start */
 body {
-  margin: 0;
-  padding: 0;
   font-family: "Poppins", sans-serif;
   background-color: #f4f4f4;
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 /* Common Styles END */
 
@@ -110,3 +112,26 @@ body {
   width: 100%;
 }
 /* Title sponsor styles END */
+
+/* Footer Styles Start */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.website-logo-and-name-container {
+  display: flex;
+  align-items: center;
+}
+.website-logo {
+  margin-right: 20px;
+}
+.website-name {
+  margin-left: 20px;
+  font-family: "Niconne", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 73px;
+}
+
+/* Footer Styles END */
