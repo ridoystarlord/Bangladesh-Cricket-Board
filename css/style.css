@@ -169,5 +169,53 @@ footer {
 
 /* Media Query Start */
 /* Mobile Device Start */
+@media only screen and (max-width: 688px) {
+  .top-banner {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .top-banner-container {
+    flex-direction: column;
+  }
+  .top-banner-information {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .top-banner-logo {
+    width: 100%;
+  }
+  .top-banner-logo img {
+    width: 100%;
+  }
+  .players {
+    flex-direction: column;
+  }
+  .players-container {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0;
+  }
+  .player {
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 24px;
+  }
+  .title-sponsor {
+    flex-direction: column;
+  }
+  .title-sponsor-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .title-sponsor-information {
+    width: 100%;
+  }
+  .title-sponsor-images {
+    width: 100%;
+  }
+}
 /* Mobile Device END */
 /* Media Query END */
