@@ -156,7 +156,9 @@ footer {
 .social-media {
   margin-top: 20px;
   margin-bottom: 20px;
+  height: 32px;
 }
+
 .footer-container p {
   font-style: normal;
   font-weight: normal;
@@ -164,3 +166,8 @@ footer {
 }
 
 /* Footer Styles END */
+
+/* Media Query Start */
+/* Mobile Device Start */
+/* Mobile Device END */
+/* Media Query END */
