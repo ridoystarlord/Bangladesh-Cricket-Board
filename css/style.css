@@ -241,9 +241,55 @@ header .checkbtn {
 }
 /* Title sponsor styles END */
 
+/* Captain Styles Start */
+.captains {
+  margin-top: 30px;
+}
+.captains-title {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.all-captains {
+  display: flex;
+  justify-content: center;
+}
+.captain-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+}
+.captain {
+  width: 300px;
+  box-shadow: 5px 5px 40px lightgray;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+.captain-department {
+  text-align: center;
+  padding: 1%;
+  font-size: 2em;
+}
+.captain-image {
+  display: block;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.captain-name {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+/* Captain Styles END */
 /* Treanding News Styles Start */
-/* Course Styles Start */
+
 .treanding-news {
+  margin-top: 60px;
   border-radius: 5px;
   padding: 30px;
   margin-bottom: 30px;
@@ -276,7 +322,9 @@ header .checkbtn {
   font-size: 1.5em;
   margin-bottom: 16px;
 }
-/* Course Styles END */
+.news p {
+  text-align: justify;
+}
 
 /* Treanding News Styles END */
 
@@ -423,6 +471,45 @@ header .checkbtn {
   .player-description {
     width: 100%;
   }
+  .captains {
+    width: 96%;
+    margin: 0 2%;
+  }
+  .all-captains {
+    width: 100%;
+    flex-direction: column;
+  }
+  .captain-container {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+  }
+  .captain {
+    width: 92%;
+    margin: 0 2%;
+  }
+  .treanding-news {
+    width: 100%;
+    padding: 0;
+  }
+  .all-news {
+    width: 96%;
+    flex-direction: column;
+    margin-right: 4%;
+  }
+  .news-container {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 24px;
+    align-items: center;
+  }
+  .news {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
   .title-sponsor {
     width: 100%;
     flex-direction: column;
@@ -460,27 +547,6 @@ header .checkbtn {
   .fab {
     font-size: 32px;
   }
-  .treanding-news {
-    width: 100%;
-    padding: 0;
-  }
-  .all-news {
-    width: 96%;
-    flex-direction: column;
-    margin-right: 4%;
-  }
-  .news-container {
-    width: 100%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: 0;
-    grid-row-gap: 24px;
-    align-items: center;
-  }
-  .news {
-    width: 96%;
-    margin-left: 2%;
-    margin-right: 2%;
-  }
 }
 /* Mobile Device END */
 /* Tablet Device Start */
@@ -489,8 +555,8 @@ header .checkbtn {
     overflow-x: hidden;
   } */
   header label.logo {
-    font-size: 30px;
-    padding-left: 50px;
+    font-size: 20px;
+    padding-left: 20px;
   }
   header nav ul li a {
     font-size: 16px;
@@ -537,10 +603,6 @@ header .checkbtn {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 24px;
     width: 100%;
-  }
-  header label.logo {
-    font-size: 20px;
-    padding-left: 20px;
   }
 }
 /* Tablet Device END */
