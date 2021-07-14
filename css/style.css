@@ -267,7 +267,6 @@ header .checkbtn {
 }
 .captain-department {
   text-align: center;
-  padding: 1%;
   font-size: 2em;
 }
 .captain-image {
@@ -535,6 +534,7 @@ header .checkbtn {
     margin-top: 30px;
   }
   .footer {
+    margin-top: 20px;
     text-align: center;
   }
   .website-name {
