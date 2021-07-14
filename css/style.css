@@ -73,6 +73,7 @@ header .checkbtn {
   background-color: #18481f;
   padding: 86px;
 }
+
 .top-banner-container {
   display: flex;
   align-items: center;
@@ -87,7 +88,7 @@ header .checkbtn {
   font-weight: bold;
   font-size: 64px;
 }
-.read-more-btn {
+/* .read-more-btn {
   background-color: #ef1f35;
   color: white;
   padding: 10px 24px;
@@ -96,15 +97,100 @@ header .checkbtn {
   font-weight: 500;
   font-size: 16px;
   margin-top: 24px;
+} */
+.read-more-btn {
+  background-color: #ef1f35;
+  position: relative;
+  display: inline-block;
+  padding: 10px 24px;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 24px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.read-more-btn span {
+  position: absolute;
+  display: block;
+}
+.read-more-btn span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, white);
+}
+.top-banner:hover .read-more-btn span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+.read-more-btn span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(270deg, transparent, white);
+}
+.top-banner:hover .read-more-btn span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+.read-more-btn span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, white);
+}
+.top-banner:hover .read-more-btn span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.read-more-btn span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, white);
+}
+.top-banner:hover .read-more-btn span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+.top-banner:hover .read-more-btn {
+  color: white;
+  background: green;
+  box-shadow: 0 0 10px red, 0 0 40px red, 0 0 80px red;
+  transition-delay: 1s;
 }
 .top-banner-logo {
   width: 50%;
   margin-left: 25px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
 }
+.top-banner-logo .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.top-banner:hover .img-top {
+  display: inline;
+}
+
 .top-banner-logo img {
   width: 570px;
   height: 430px;
-  /* margin-right: 140px; */
 }
 /* Top Banner Style END */
 
@@ -150,7 +236,7 @@ header .checkbtn {
 .title-sponsor {
   display: flex;
   justify-content: center;
-  margin-top: 170px;
+  margin-top: 70px;
 }
 .title-sponsor-container {
   display: flex;
@@ -191,6 +277,11 @@ header .checkbtn {
   flex-direction: column;
   align-items: center;
 }
+.footer-container p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
 .website-logo-and-name-container {
   display: flex;
   align-items: center;
@@ -223,11 +314,7 @@ header .checkbtn {
   color: #969bab;
   opacity: 0.8;
 }
-.footer-container p {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-}
+
 /* Footer Styles END */
 
 /* Media Query Start */
@@ -241,24 +328,26 @@ header .checkbtn {
     padding-left: 15px;
     padding-right: 15px;
   }
-  header label.logo {
-    font-size: 30px;
-  }
   header .checkbtn {
     display: block;
+  }
+  header label.logo {
+    font-size: 30px;
   }
   header label {
     padding: 0 30px;
   }
   header ul {
     position: fixed;
-    width: 100%;
+    width: 90%;
     height: 100vh;
-    background-color: #2c3e50;
+    background-color: #54b363;
     top: 80px;
     left: -100%;
     text-align: center;
     transition: all 0.5s;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   header nav ul li {
     display: block;
@@ -271,7 +360,7 @@ header .checkbtn {
   header a:hover,
   header a.active {
     background: none;
-    color: #0082e6;
+    color: black;
   }
   #check:checked ~ ul {
     left: 0;
@@ -333,20 +422,21 @@ header .checkbtn {
     width: 100%;
     margin-right: 0;
   }
+  .title-sponsor-description {
+    width: 100%;
+  }
   .title-sponsor-images {
     width: 100%;
     margin-left: 0;
     margin-top: 30px;
   }
-  .title-sponsor-description {
-    width: 100%;
+  .footer {
+    text-align: center;
   }
   .website-name {
     font-size: 60px;
   }
-  .footer {
-    text-align: center;
-  }
+
   .social-media a {
     margin-right: 14px;
   }
@@ -357,15 +447,15 @@ header .checkbtn {
 /* Mobile Device END */
 /* Tablet Device Start */
 @media only screen and (min-width: 689px) and (max-width: 991px) {
+  main {
+    overflow-x: hidden;
+  }
   header label.logo {
     font-size: 30px;
     padding-left: 50px;
   }
   header nav ul li a {
     font-size: 16px;
-  }
-  main {
-    overflow-x: hidden;
   }
   .top-banner {
     width: 90%;
